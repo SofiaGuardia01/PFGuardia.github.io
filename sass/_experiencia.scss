@@ -1,0 +1,58 @@
+/* EXPERIENCIA */
+#mainExp {
+    grid-row: 3/4;
+    height: auto;
+    background-color: rgb(1, 1, 45);
+
+    display: grid;
+    grid-template-rows: 400px 150px;
+
+    .mainExp__carrousel {
+        grid-row: 1/2;
+        margin: 15px;
+
+        background-color: rgb(239, 254, 255);
+        border-radius: 15px;
+    }
+
+    .mainExp__text {
+        grid-row: 2/3;
+        margin: 15px;
+        padding: 25px;
+
+        background-color: rgb(239, 254, 255);
+        border-radius: 15px;
+
+        text-align: center;
+
+        p {
+            font-size: large;
+            background-color: rgb(1, 1, 45);
+            border-radius: 15px;
+
+            a {
+                color: wheat;
+            }
+
+            &:hover {
+                font-style: italic;
+            }
+        }
+    }
+}
+
+@media (max-width:480px) {
+    .mainExp__text {
+        p {
+            margin: 10px 14%;
+        }
+    }
+}
+
+@media (min-width:481px) {
+    .mainExp__text {
+        p {
+            margin: 10px 42%;
+        }
+    }
+}

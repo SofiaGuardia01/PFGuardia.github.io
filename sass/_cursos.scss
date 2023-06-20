@@ -1,0 +1,114 @@
+/* CURSOS */
+#mainCurses {
+    grid-row: 3/4;
+    background-color: rgb(1, 1, 45);
+
+    display: grid;
+    grid-template-rows: 1fr auto auto auto auto;
+    gap: 10px;
+
+    h3 {
+        color: white;
+    }
+
+    .mainCurses__categories {
+        grid-row: 2/3;
+
+        ul {
+            display: flex;
+            justify-content: center;
+
+            li {
+                font-weight: 700;
+
+                background-color: rgb(239, 254, 255);
+                filter: drop-shadow(2px 5px 7px rgb(155, 187, 255));
+                border-radius: 10px;
+
+                margin: 20px;
+                text-align: center;
+            }
+        }
+    }
+
+    .mainCurses__levels {
+        grid-row: 3/4;
+        margin: 30px;
+    }
+
+    .mainCurses__exams {
+        grid-row: 4/5;
+        margin: 10px;
+    }
+
+    .mainCurses__skills {
+        grid-row: 5/6;
+        margin: 10px;
+    }
+
+    .boxCards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: start;
+        align-content: space-between;
+
+        div {
+            margin: 5px;
+        }
+
+        img {
+            width: auto;
+            height: 200px;
+        }
+
+    }
+}
+
+@media (max-width:480px) {
+    body {
+        #mainCurses {
+
+            .main__intro {
+                margin: 3%;
+            }
+
+            .mainCurses__categories {
+                width: 415px;
+
+                ul {
+                    padding-left: 0px;
+
+                    li {
+                        font-size: medium;
+
+                        height: 91px;
+                        width: 181px;
+
+                        padding: 36px 5px;
+                        text-align: center;
+
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media (min-width:481px) {
+    body {
+        #mainCurses {
+            .mainCurses__categories {
+                ul {
+                    li {
+                        font-size: large;
+                        height: 150px;
+                        width: 150px;
+
+                        padding: 63px 10px;
+                    }
+                }
+            }
+        }
+    }
+}

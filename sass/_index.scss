@@ -1,0 +1,117 @@
+/* INDEX */
+
+#mainI {
+    background-image: url(../imagenes/greyBackground1.jpg);
+    background-size: cover;
+    margin: 10px 0px;
+    padding: 10px;
+
+    h2 {
+        background-color: white;
+        text-align: center;
+
+        border-radius: 15px;
+
+        a {
+            color: lightseagreen;
+            text-shadow: black;
+            padding: 3px 10px;
+            text-shadow: #38ccea 0px 0 7px;
+
+            &:hover {
+                background-color: lightseagreen;
+                color: white;
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .mainI__start {
+        background-color: rgb(239, 254, 255);
+        filter: drop-shadow(1px -6px 64px rgb(239, 205, 142));
+        border-radius: 10px;
+        width: 300px;
+        height: 200px;
+
+        text-align: center;
+        padding: 20px 0px;
+
+        p {
+            padding: 20px 0px;
+            margin: 0px;
+        }
+
+        .mainI__p1 {
+            background-color: lightseagreen;
+            color: white;
+            font-weight: bold;
+        }
+
+        button {
+            margin: 10px;
+        }
+
+        .mainI__p2 {
+            a {
+                color: blue;
+                font-style: oblique;
+                font-weight: 500;
+
+                &:hover {
+                    font-weight: 700;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:480px) {
+
+    /* MEDIA PHONE | INDEX */
+    .bodyI {
+        display: grid;
+        grid-template-rows: 40px 120px 125% 80px;
+
+        #mainI {
+            width: 100%;
+            height: 100%;
+            background-image: url(../imagenes/notesNotebook.webp);
+
+            h2 {
+                width: 210px;
+                padding: 1%;
+                margin: 2%;
+            }
+
+            .mainI__start {
+                position: sticky;
+                top: 67%;
+                left: 19%;
+            }
+        }
+    }
+}
+
+@media (min-width:481px) {
+    .bodyI {
+        display: grid;
+        grid-template-rows: 40px 120px auto 80px;
+
+        #mainI {
+            width: 100%;
+            height: 700px;
+
+            h2 {
+                width: 300px;
+                padding: 10px;
+                margin: 50px;
+            }
+
+            .mainI__start {
+                margin-left: 76%;
+                margin-top: -3%;
+            }
+        }
+    }
+}
