@@ -5,69 +5,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Experiencia de los estudiantes de ingles en diferentes niveles y examenes con la profesora de lengua inglesa.">
-    <meta name="keywords"  content="ingles, autodidacta, estudiante, profesora, aprender, recursos, niveles, cursos, examen">
-    <link rel="shortcut icon" href="../imagenes/logoEnglish.png">
-    <link rel="stylesheet" href="../sass/main.css">
+    <meta name="description"
+        content="Experiencia de los estudiantes de ingles en diferentes niveles y examenes con la profesora de lengua inglesa.">
+    <meta name="keywords"
+        content="ingles, autodidacta, estudiante, profesora, aprender, recursos, niveles, cursos, examen">
+    <link rel="shortcut icon" href="../imagenes/logoEnglish.png"
+        alt="gorro de graduación negro, debajo figura la frase English Expertise">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../sass/main.css">
     <title>English Expertise</title>
 </head>
 
 <body class="bodyGeneral">
     <header>
-            <div class="firstNav">
+        <div class="firstNav">
 
+            <ul>
+                <li>
+                    <a href="#">
+                        ¿Cómo funciona?
+                    </a>
+                </li>
+                <li>
+                    <a href="./experiencia.html">
+                        Experiencia
+                    </a>
+                </li>
+                <li>
+                    <a href="./contacto.html">
+                        Contacto
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        COMENZAR
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <div class="secondNav">
+            <!-- RUTEO -->
+            <a href="../index.html"><img src="../imagenes/englishExpertiseLogo.png"
+                    alt="gorro de graduación negro, debajo figura la frase English Expertise"></a>
+            <nav>
                 <ul>
                     <li>
-                        <a href="#">
-                            ¿Cómo funciona?
+                        <a href="./cursos.html">
+                            Cursos
                         </a>
                     </li>
                     <li>
-                        <a href="../pages/experiencia.html">
-                            Experiencia
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../pages/contacto.html">
-                            Contacto
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            COMENZAR
+                        <a href="./recursos.html">
+                            Recursos
                         </a>
                     </li>
                 </ul>
+            </nav>
+        </div>
 
-            </div>
-            <div class="secondNav">
-                <a href="../index.html"><img src="../imagenes/englishExpertiseLogo.png"></a>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="../pages/cursos.html">
-                                Cursos
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../pages/recursos.html">
-                                Recursos
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-      
     </header>
 
     <main id="mainExp">
-        <!-- CARROUSEL -->
-        <div class="mainExp__carrousel">
-            <!-- AUTO SCROLL
-            https://splidejs.com/extensions/auto-scroll/ -->
+        <div class="mainExp__info">
+            <div class="teacherSofia">
+                <img src="../imagenes/teacherSofia.jpeg"
+                    alt="picture of a woman with long brown hair. The title of the picture says English Teacher. Next to the picture Teacher Sofia is quoted: Objetivos claros con la mentoría adecuada te lleva a lugares increíbles. And in the bottom appears an email address: sg.english.alumnos@gmail.com">
+                    <h3>TEACHER Sofía Guardia</h3>
+            </div>
+            <div class="mainExp__students">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../imagenes/review1.png" class="d-block w-100" alt="image of a blonde girl with long hair. Below the small image appears a quote.">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../imagenes/review2.png" class="d-block w-100" alt="image of a brunette girl with long hair, red lips and white t-shirt. Below the small image appears a quote.">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../imagenes/review3.png" class="d-block w-100" alt="image of a curly girl. Below the small image appears a quote.">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../imagenes/review4.png" class="d-block w-100" alt="image of a curly long brunette girl with yellow t-shirt and a red notebook in her hands. Below the small image appears a quote.">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../imagenes/review5.png" class="d-block w-100" alt="image of a brunette boy with glasses. Below the small image appears a quote.">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../imagenes/review6.png" class="d-block w-100" alt="image of a brunette girl with long hair and glasses. Below the small image appears a quote.">
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
+
         <div class="mainExp__text">
             <h4>¿Tomaste algún curso o utilizaste algún recurso de la página web?</h4>
             <p>
@@ -76,22 +118,26 @@
                 </a>
             </p>
         </div>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://api.whatsapp.com/send?phone=5493571312373&text=Hola!%20Me%20gustar%C3%ADa%20agendar%20una%20primer%20reuni%C3%B3n%20con%20la%20profesora.%20%C2%BFCu%C3%A1l%20es%20tu%20disponibilidad%20horaria?"
+            class="float" target="_blank">
+            <i class="fa fa-whatsapp my-float"></i>
+        </a>
     </main>
 
     <footer id="footer">
         <ul class="footer__list">
-            <li><a href="../pages/cursos.html"> Cursos</a></li>
-            <li><a href="../pages/recursos.html">Recursos</a></li>
-            <li><a href="../pages/experiencia.html">Experiencia</a></li>
+            <li><a href="./cursos.html"> Cursos</a></li>
+            <li><a href="./recursos.html">Recursos</a></li>
+            <li><a href="./experiencia.html">Experiencia</a></li>
             <li><a href="#"> <!--pendientehacer-->¿Cómo usar la web?</a></li>
-            <li><a href="../pages/contacto.html">Contacto</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
         </ul>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-
-    <script src="../java/java.js"></script>
 
 </body>
 

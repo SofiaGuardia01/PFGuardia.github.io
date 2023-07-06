@@ -2,17 +2,46 @@
 #mainExp {
     grid-row: 3/4;
     height: auto;
-    background-color: rgb(1, 1, 45);
+    background-color: $color2;
 
     display: grid;
-    grid-template-rows: 400px 150px;
+    grid-template-rows: auto 200px;
 
-    .mainExp__carrousel {
+    .mainExp__info {
         grid-row: 1/2;
-        margin: 15px;
+        margin: 2% 15% 2% 10%;
 
-        background-color: rgb(239, 254, 255);
-        border-radius: 15px;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .teacherSofia {
+            margin: 5% 0%;
+
+            img {
+                height: 400px;
+                border-radius: 50px;
+            }
+
+            h3 {
+                font-size: larger;
+                font-weight: bold;
+                color: white;
+                text-align: center;
+
+                padding: 25px;
+            }
+        }
+
+        .mainExp__students {
+            #carouselExample {
+                .carousel-control-prev, .carousel-control-next{
+                    background-color: cadetblue;
+                }
+            }
+        }
     }
 
     .mainExp__text {
@@ -20,15 +49,21 @@
         margin: 15px;
         padding: 25px;
 
-        background-color: rgb(239, 254, 255);
+        background-color: $color1;
         border-radius: 15px;
 
         text-align: center;
 
         p {
             font-size: large;
-            background-color: rgb(1, 1, 45);
+            background-color: $color2;
+            width: 300px;
             border-radius: 15px;
+
+            margin: 30px auto;
+            padding: 5px;
+
+
 
             a {
                 color: wheat;
@@ -41,18 +76,19 @@
     }
 }
 
+
 @media (max-width:480px) {
-    .mainExp__text {
-        p {
-            margin: 10px 14%;
-        }
+
+    /* MEDIA PHONE | EXPERIENCE */
+    #carouselExample {
+        width: 330px;
     }
 }
 
 @media (min-width:481px) {
-    .mainExp__text {
-        p {
-            margin: 10px 42%;
-        }
+
+    /* MEDIA MONITOR | EXPERIENCE */
+    #carouselExample {
+        width: 500px;
     }
 }

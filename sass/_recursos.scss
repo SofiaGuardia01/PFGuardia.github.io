@@ -1,14 +1,14 @@
 /* RECURSOS */
 #mainResources {
     grid-row: 3/4;
-    background-color: rgb(1, 1, 45);
+    background-color: $color2;
 
     padding: 1px;
 
     .mainResources__exam {
         text-align: center;
         background-color: rgb(154, 240, 206);
-        filter: drop-shadow(13px 13px 9px rgb(239, 254, 255));
+        filter: drop-shadow(13px 13px 9px $color1);
         border-radius: 15px;
         padding: 10px;
 
@@ -22,8 +22,9 @@
 
         h4 {
             text-align: center;
-            background-color: rgb(1, 1, 45);
-            color: antiquewhite;
+            background-color: $color1;
+            border-radius: 5px;
+            color: $color2;
             padding: 10px;
 
             &:hover {
@@ -36,9 +37,12 @@
             font-weight: bolder;
             font-style: italic;
 
+            margin: 10px auto;
+            width: 220px;
+
             background-color: aliceblue;
             border-radius: 40px;
-            background-color: rgb(239, 254, 255);
+            background-color: $color1;
             filter: drop-shadow(2px 5px 7px rgb(155, 187, 255));
 
             a:hover {
@@ -51,6 +55,19 @@
 
     .mainResources__category {
         margin: 15px;
+
+        .accordion-body {
+            background-color: $color1;
+
+            p {
+                font-weight: bold;
+            }
+        }
+
+        .accordion-button {
+            font-weight: bold;
+            background-color: rgb(153, 189, 243);
+        }
     }
 }
 
@@ -62,12 +79,7 @@
             padding: 3px 0px;
 
             .mainResources__exam {
-
                 margin: 25px 55px;
-
-                .examButton {
-                    margin: 10px 6%;
-                }
             }
         }
     }
@@ -76,13 +88,8 @@
 @media (min-width:481px) {
     body {
         .mainResources__exam {
-
             margin: 40px 85px;
 
-            .examButton {
-
-                margin: 0% 40%;
-            }
         }
     }
 }
